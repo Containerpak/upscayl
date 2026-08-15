@@ -8,7 +8,7 @@ ADD --checksum=sha256:3a43bfa80ba10a5ec1dcbbec9e6620b465f6aa541b7280b6bbabf8e306
 RUN mkdir -p /stage && \
     unzip -q /tmp/app.zip -d /stage
 
-FROM ghcr.io/containerpak/mesa64:main
+FROM ghcr.io/containerpak/gtk3:main
 
 LABEL org.opencontainers.image.source="https://github.com/Containerpak/upscayl"
 
@@ -18,4 +18,3 @@ COPY upscayl.desktop /usr/share/applications/upscayl.desktop
 COPY icon.png /usr/share/icons/hicolor/128x128/apps/upscayl.png
 
 RUN chmod 0755 /usr/bin/upscayl && cpak-clean-junk
-
