@@ -12,6 +12,10 @@ FROM ghcr.io/containerpak/gtk3:main
 
 LABEL org.opencontainers.image.source="https://github.com/Containerpak/upscayl"
 
+RUN apt-get update && \
+    apt-get install -y --no-install-recommends libnspr4 libnss3 && \
+    cpak-clean-junk
+
 COPY --from=source /stage/ /opt/upscayl/
 COPY upscayl /usr/bin/upscayl
 COPY upscayl.desktop /usr/share/applications/upscayl.desktop
