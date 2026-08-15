@@ -1,0 +1,9 @@
+[Desktop Entry]
+Type=Application
+Name=Upscayl
+Comment=Upscale images with local AI models.
+Exec=upscayl %U
+Icon=upscayl
+Terminal=false
+Categories=Graphics;Photography;
+
