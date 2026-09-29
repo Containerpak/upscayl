@@ -4,7 +4,7 @@
   "name": "Upscayl",
   "description": "Upscale images with local AI models.",
   "version": "2.15.0",
-  "image": "ghcr.io/containerpak/upscayl@sha256:69163e9410a2f2298425e6a86b59ce39e024ba939df146ae3838debae236d4bd",
+  "image": "ghcr.io/containerpak/upscayl@sha256:464ef3cbefeebbb5eb50fa2d6773b4ac204f15465b079362394f644e0a1605d0",
   "binaries": [
     "/usr/bin/upscayl"
   ],
